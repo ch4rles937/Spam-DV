@@ -1,0 +1,13 @@
+import pyautogui as pg
+import time
+import webbrowser as web
+phone_no="+526144642583"
+parsedMessage="➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳"
+web.open('https://web.whatsapp.com/send?phone='+phone_no+'&text='+parsedMessage)
+time.sleep(5)
+for i in range(1500000000):
+pg.write('We')
+pg.press('enter')
+print('Mensaje #'+str(i+1)+' enviado')
+pass
+pg.alert('Bomba de mensajes finalizada')
